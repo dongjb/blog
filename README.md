@@ -1,6 +1,6 @@
 # 上善若水
 
-<p align="center"><a target="_blank" href="//dongjb.com"><img src="./public/home-banner.jpg" /></a></p>
+<p align="center"><a target="_blank" href="https://dongjb.com"><img src="./home-banner.jpg" /></a></p>
 
 ## 介绍
 
