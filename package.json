@@ -1,12 +1,13 @@
 {
-  "name": "docs",
+  "name": "blog",
   "version": "1.0.0",
-  "author": "reco_luan",
+  "author": "dongjb",
   "scripts": {
     "dev": "vuepress dev ./docs",
     "build": "vuepress build ./docs"
   },
   "devDependencies": {
+    "compression-webpack-plugin": "^4.0.0",
     "vuepress": "1.5.0",
     "vuepress-theme-reco": "1.4.7"
   },

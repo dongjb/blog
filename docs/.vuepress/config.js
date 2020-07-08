@@ -1,3 +1,6 @@
+const CompressionWebpackPlugin = require('compression-webpack-plugin');
+const productionGzipExtensions = ['js', 'css'];
+
 module.exports = {
   title: '上善若水的博客',
   description: '在每一个因缘与相会中流过 不必积存 在每一次飘风与骤雨里流过 不必驻留',
@@ -64,5 +67,18 @@ module.exports = {
   },
   markdown: {
     lineNumbers: true
+  },
+  chainWebpack: config => {
+    if (process.env.NODE_ENV === 'production') {
+      config.plugin('compression-webpack-plugin').use(
+        new CompressionWebpackPlugin({
+          // filename: '[path].gz[query]',
+          algorithm: 'gzip',
+          test: new RegExp('\\.(' + productionGzipExtensions.join('|') + ')$'),
+          threshold: 10240, //对超过10k的数据进行压缩
+          minRatio: 0.6 // 压缩比例，值为0 ~ 1
+        })
+      );
+    }
   }
 };
