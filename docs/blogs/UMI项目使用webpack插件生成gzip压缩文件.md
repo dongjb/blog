@@ -44,7 +44,7 @@ chainWebpack: config => {
 };
 ```
 
-## ![image.png](https://cdn.nlark.com/yuque/0/2020/png/369912/1595298681583-d3f320b1-9810-4f7f-b5e9-b954aafcb103.png#align=left&display=inline&height=169&margin=%5Bobject%20Object%5D&name=image.png&originHeight=338&originWidth=450&size=44942&status=done&style=none&width=225)
+## ![image.png](http://images.dongjb.com/1595298681583-d3f320b1-9810-4f7f-b5e9-b954aafcb103.png)
 
 同理在 vue 项目中也可以该插件生成 gzip 文件，配置也是大同小异
 
